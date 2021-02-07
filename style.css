@@ -1,10 +1,78 @@
-body {
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-
 }
+
 h1{
     text-align: center;
+    margin-top: 20px;
+}
+.row {
+    width: 90%;
+    border: 5px;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+.menu{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: salmon;
+    color: white;
+    text-align: center;
+
+}
+.item {
+    float:right;
+    width: 40%;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 120%;
+    
+}
+#text{
+    margin: 10px;
+    margin-top: 30px;
+}
+#html {
+    background-color: cornflowerblue;
+}
+#css{
+    background-color: cyan;
+}
+#javascript {
+    background-color: darkcyan;
+}
+
+/* Media */
+/* Desktop */
+@media(min-width: 992px){
+    .col-lg-4{
+        float: left;
+        background-color: darkgray;
+    }
+}
+
+/* tablet */
+
+@media(min-width: 768px) and (max-width: 991px){
+    .col-md-6, .col-md-12{
+        float: left;
+        background-color: darkseagreen;
+    }
+    .col-md-6{
+        width: 50%;
+
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+@media(min-width: 767px){
+    .col-sm-12{
+        width: 100%;
+        float: left;
+        background-color: rgb(206, 133, 83);
+    }
 }
